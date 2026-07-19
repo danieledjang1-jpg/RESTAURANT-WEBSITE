@@ -1,0 +1,2746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Restaurant</title>
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+
+
+<!-- <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="D-Kitchen Restaurant - Delicious food, online reservations, and online ordering.">
+
+<meta name="keywords" content="Restaurant, Food, Online Order, D-Kitchen, Bootstrap">
+
+<meta name="author" content="Daniel Edjang">
+
+<meta name="robots" content="index, follow">
+
+
+
+
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+
+<div class="container">
+
+<!-- <a class="navbar-brand fw-bold fs-2" href="#">
+🍬 D-KITCHEN
+</a> -->
+
+
+
+
+
+
+
+
+
+<a class="navbar-brand">
+
+<img
+
+src="ICON-SVG/chef-hat-svgrepo-com.svg"
+
+width="45"
+
+alt="Logo">
+
+D-KITCHEN
+
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse justify-content-end"
+id="navbarNav">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link active" href="#">
+Home
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+Dish
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+Chefs
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+Blog
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+Contact
+</a>
+</li>
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle"
+
+href="#"
+
+data-bs-toggle="dropdown">
+
+
+
+
+
+
+
+
+
+<!-- <li class="nav-item ms-lg-3">
+    <button class="btn btn-danger position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+            0
+        </span>
+    </button>
+</li> -->
+
+
+
+
+
+
+
+
+
+
+Pages
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li>
+
+<a class="dropdown-item"
+
+href="#">
+
+Gallery
+
+</a>
+
+</li>
+
+<li>
+
+<a class="dropdown-item"
+
+href="#">
+
+Reservation
+
+</a>
+
+</li>
+
+
+
+
+
+
+
+
+</ul>
+
+</li>
+
+</ul>
+
+
+
+
+
+
+
+
+<!-- Dark mode -->
+<button id="darkModeBtn" class="btn btn-outline-light ms-2">
+    <i class="fas fa-moon"></i>
+</button>
+
+
+
+
+
+
+
+
+
+<li class="nav-item ms-lg-3">
+    <button class="btn btn-danger position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+            0
+        </span>
+    </button>
+</li>
+
+
+
+
+
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="home">
+
+<div id="heroSlider"
+
+class="carousel slide carousel-fade"
+
+data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+
+<img src="images/hero1.jpg"
+
+class="d-block w-100 hero-image"
+
+alt="">
+
+<div class="carousel-caption">
+
+<h1>Delicious Recipes</h1>
+
+<p>Fresh Food Every Day</p>
+
+<a href="#" class="btn btn-danger btn-lg">
+
+Explore Menu
+
+</a>
+
+</div>
+
+</div>
+
+<div class="carousel-item">
+
+<img src="images/hero2.jpg"
+
+class="d-block w-100 hero-image"
+
+alt="">
+
+<div class="carousel-caption">
+
+<h1>Fresh Ingredients</h1>
+
+<p>Prepared by Professional Chefs</p>
+
+</div>
+
+</div>
+
+<div class="carousel-item">
+
+<img src="images/hero3.jpg"
+
+class="d-block w-100 hero-image"
+
+alt="">
+
+<div class="carousel-caption">
+
+<h1>Book A Table</h1>
+
+<p>Enjoy Your Family Dinner</p>
+
+</div>
+
+</div>
+
+</div>
+
+<button class="carousel-control-prev"
+
+type="button"
+
+data-bs-target="#heroSlider"
+
+data-bs-slide="prev">
+
+<span class="carousel-control-prev-icon"></span>
+
+</button>
+
+<button class="carousel-control-next"
+
+type="button"
+
+data-bs-target="#heroSlider"
+
+data-bs-slide="next">
+
+<span class="carousel-control-next-icon"></span>
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="py-5">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<!-- Left Image -->
+
+<div class="col-lg-6 mb-5 mb-lg-0">
+
+<img src="images/about.jpg"
+class="img-fluid rounded shadow about-img"
+alt="Restaurant">
+
+</div>
+
+<!-- Right Text -->
+
+<div class="col-lg-6">
+
+<h6 class="text-danger text-uppercase fw-bold">
+About Us
+</h6>
+
+<h2 class="display-5 fw-bold mb-4">
+We Provide Healthy Food For Your Family
+</h2>
+
+<p class="text-muted">
+
+Our restaurant serves fresh and delicious meals made
+with premium ingredients. Every dish is prepared with
+love by our professional chefs to give you an unforgettable
+experience.
+
+</p>
+
+<p class="text-muted">
+
+Whether you're enjoying breakfast, lunch, dinner,
+or celebrating a special occasion, D-Kitchen offers
+excellent service in a warm and relaxing atmosphere.
+
+</p>
+
+<div class="row text-center mt-4">
+
+<div class="col-4">
+
+<h2 class="text-danger fw-bold counter"
+data-target="15">
+0
+</h2>
+
+<p>Years</p>
+
+</div>
+
+<div class="col-4">
+
+<h2 class="text-danger fw-bold counter"
+data-target="500">
+0
+</h2>
+
+<p>Customers</p>
+
+</div>
+
+<div class="col-4">
+
+<h2 class="text-danger fw-bold counter"
+data-target="35">
+0
+</h2>
+
+<p>Awards</p>
+
+</div>
+
+</div>
+
+<a href="#menu"
+class="btn btn-danger btn-lg mt-4">
+
+Explore Menu
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- POPULAR DISHES -->
+
+<section id="menu" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h6 class="text-danger text-uppercase fw-bold">
+Popular Dishes
+</h6>
+
+<h2 class="display-5 fw-bold">
+Our Delicious Menu
+</h2>
+
+<p class="text-muted">
+Choose from our chef's special dishes prepared with fresh ingredients.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<!-- CARD 1 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card food-card border-0 shadow">
+
+<img src="images/dish1.jpg" class="card-img-top" alt="Burger">
+
+<div class="card-body">
+
+<h4 class="card-title">Classic Burger</h4>
+
+<p class="text-muted">
+Juicy beef burger served with fries.
+</p>
+
+<div class="d-flex justify-content-between align-items-center">
+
+<h4 class="text-danger">$15</h4>
+
+
+
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+
+
+
+
+
+<span class="text-warning">
+
+★★★★★
+
+</span>
+
+</div>
+
+<!-- <button class="btn btn-danger w-100 mt-3">
+
+Order Now
+
+</button> -->
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Classic Burger"
+
+data-price="15">
+
+Add To Cart
+
+</button>
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card food-card border-0 shadow">
+
+<img src="images/dish2.jpg" class="card-img-top" alt="Pizza">
+
+<div class="card-body">
+
+<h4>Italian Pizza</h4>
+
+<p class="text-muted">
+
+Fresh cheese with tomato sauce.
+
+</p>
+
+<div class="d-flex justify-content-between">
+
+<h4 class="text-danger">$20</h4>
+
+
+
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+
+
+
+
+
+<span class="text-warning">
+
+★★★★★
+
+</span>
+
+</div>
+
+<!-- <button class="btn btn-danger w-100 mt-3">
+
+Order Now
+
+</button> -->
+
+
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Italian Pizza"
+
+data-price="15">
+
+Add To Cart
+
+</button>
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card food-card border-0 shadow">
+
+<img src="images/dish3.jpg" class="card-img-top" alt="Steak">
+
+<div class="card-body">
+
+<h4>Grilled Steak</h4>
+
+<p class="text-muted">
+
+Premium grilled steak with vegetables.
+
+</p>
+
+<div class="d-flex justify-content-between">
+
+<h4 class="text-danger">$30</h4>
+
+
+
+
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+
+
+
+
+
+<span class="text-warning">
+
+★★★★★
+
+</span>
+
+</div>
+
+<!-- <button class="btn btn-danger w-100 mt-3">
+
+Order Now
+
+</button> -->
+
+
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Grilled Steak"
+
+data-price="15">
+
+Add To Cart
+
+</button>
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card food-card border-0 shadow">
+
+<img src="images/dish4.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h4>Chicken Pasta</h4>
+
+<p class="text-muted">
+
+Creamy pasta with grilled chicken.
+
+</p>
+
+<div class="d-flex justify-content-between">
+
+<h4 class="text-danger">$18</h4>
+
+
+
+
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+
+
+
+
+
+
+<span class="text-warning">
+
+★★★★★
+
+</span>
+
+</div>
+
+<!-- <button class="btn btn-danger w-100 mt-3">
+
+Order Now
+
+</button> -->
+
+
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Chicken Pasta"
+
+data-price="15">
+
+Add To Cart
+
+</button>
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card food-card border-0 shadow">
+
+<img src="images/dish5.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h4>Sea Food</h4>
+
+<p class="text-muted">
+
+Fresh seafood with special sauce.
+
+</p>
+
+<div class="d-flex justify-content-between">
+
+<h4 class="text-danger">$35</h4>
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+<span class="text-warning">
+
+★★★★★
+
+</span>
+
+</div>
+
+<!-- <button class="btn btn-danger w-100 mt-3">
+
+Order Now
+
+</button> -->
+
+
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Sea Food"
+
+data-price="15">
+
+Add To Cart
+
+</button>
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card food-card border-0 shadow">
+
+<img src="images/dish6.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h4>Chocolate Cake</h4>
+
+<p class="text-muted">
+
+Soft chocolate cake with cream.
+
+</p>
+
+<div class="d-flex justify-content-between">
+
+<h4 class="text-danger">$10</h4>
+
+
+
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+
+
+
+
+
+<span class="text-warning">
+
+★★★★★
+
+</span>
+
+</div>
+
+<!-- <button class="btn btn-danger w-100 mt-3">
+
+Order Now
+
+</button> -->
+
+
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Chocolate Cake"
+
+data-price="15">
+
+Add To Cart
+
+</button>
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- VIDEO SECTION -->
+
+<section class="video-section py-5">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6 mb-4">
+
+<h5 class="text-danger fw-bold">
+Our Story
+</h5>
+
+<h2 class="display-4 fw-bold">
+Experience The Best Restaurant In Town
+</h2>
+
+<p class="text-muted">
+
+Enjoy premium meals prepared with fresh ingredients by
+our professional chefs.
+
+From breakfast to dinner, every dish is carefully made
+to satisfy every customer.
+
+</p>
+
+<a href="#menu" class="btn btn-danger btn-lg mt-3">
+
+Explore Menu
+
+</a>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="video-container">
+
+<video
+id="restaurantVideo"
+poster="images/video-cover.jpg">
+
+<source
+src="videos/restaurant.mp4.mp4"
+type="video/mp4">
+
+</video>
+
+<button
+id="playPauseBtn"
+class="play-button">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- <div class="row mb-4">
+
+    <div class="col-lg-6 mx-auto">
+
+        <input
+        type="text"
+        id="searchFood"
+        class="form-control form-control-lg"
+
+        placeholder="🔍 Search food...">
+
+    </div>
+
+</div> -->
+
+
+
+
+
+
+
+
+
+<!-- FEATURED MENU -->
+
+<section id="featured-menu" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h6 class="text-danger text-uppercase fw-bold">
+Special Menu
+</h6>
+
+<h2 class="display-5 fw-bold">
+Discover Our Best Dishes
+</h2>
+
+<p class="text-muted">
+Enjoy our carefully prepared meals made with fresh ingredients.
+</p>
+
+</div>
+
+
+
+
+<div class="row mb-4">
+
+    <div class="col-lg-6 mx-auto">
+
+        <input
+        type="text"
+        id="searchFood"
+        class="form-control form-control-lg"
+
+        placeholder="🔍 Search food...">
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- CATEGORY BUTTONS -->
+
+<div class="text-center mb-5">
+
+<button class="btn btn-danger menu-btn active" data-category="all">
+All
+</button>
+
+<button class="btn btn-outline-danger menu-btn" data-category="breakfast">
+Breakfast
+</button>
+
+<button class="btn btn-outline-danger menu-btn" data-category="lunch">
+Lunch
+</button>
+
+<button class="btn btn-outline-danger menu-btn" data-category="dinner">
+Dinner
+</button>
+
+<button class="btn btn-outline-danger menu-btn" data-category="dessert">
+Desserts
+</button>
+
+</div>
+
+<div class="row g-4">
+
+<!-- ITEM 1 -->
+
+<div class="col-md-6 col-lg-3 menu-item breakfast">
+
+<div class="card h-100 shadow border-0">
+
+<img src="images/breakfast1.jpg" class="card-img-top" alt="Breakfast">
+
+<div class="card-body text-center">
+
+<h5>Pancake Breakfast</h5>
+
+<p class="text-muted">
+Fresh pancakes served.
+</p>
+
+<h4 class="text-danger">$12</h4>
+
+
+
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+
+
+
+
+
+
+<!-- <button class="btn btn-danger">
+Order Now
+</button> -->
+
+
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Pancake Breakfast"
+
+data-price="15">
+
+Add To Cart
+
+</button>
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ITEM 2 -->
+
+<div class="col-md-6 col-lg-3 menu-item lunch">
+
+<div class="card h-100 shadow border-0">
+
+<img src="images/lunch1.jpg" class="card-img-top" alt="Lunch">
+
+<div class="card-body text-center">
+
+<h5>Chicken Burger</h5>
+
+<p class="text-muted">
+Served with crispy fries.
+</p>
+
+<h4 class="text-danger">$18</h4>
+
+
+
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+
+
+
+
+
+<!-- <button class="btn btn-danger">
+Order Now
+</button> -->
+
+
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Chicken Burger"
+
+data-price="15">
+
+Add To Cart
+
+
+
+
+
+
+
+
+<!-- <input
+
+type="text"
+
+id="coupon"
+
+class="form-control mt-3"
+
+placeholder="Coupon Code">
+
+<button
+
+class="btn btn-warning w-100 mt-2"
+
+onclick="applyCoupon()">
+
+Apply Coupon
+
+</button> -->
+
+
+
+
+
+
+
+
+
+
+
+</button>
+
+
+
+
+
+<!-- <input
+
+type="text"
+
+id="coupon"
+
+class="form-control mt-3"
+
+placeholder="Coupon Code">
+
+<button
+
+class="btn btn-warning w-100 mt-2"
+
+onclick="applyCoupon()">
+
+Apply Coupon
+
+</button> -->
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ITEM 3 -->
+
+<div class="col-md-6 col-lg-3 menu-item dinner">
+
+<div class="card h-100 shadow border-0">
+
+<img src="images/dinner1.jpg" class="card-img-top" alt="Dinner">
+
+<div class="card-body text-center">
+
+<h5>Grilled Steak</h5>
+
+<p class="text-muted">
+Premium steak with vegetables.
+</p>
+
+<h4 class="text-danger">$30</h4>
+
+
+
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+
+
+
+
+
+
+<!-- <button class="btn btn-danger">
+Order Now
+</button> -->
+
+
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Grilled Steak"
+
+data-price="15">
+
+Add To Cart
+
+</button>
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ITEM 4 -->
+
+<div class="col-md-6 col-lg-3 menu-item dessert">
+
+<div class="card h-100 shadow border-0">
+
+<img src="images/dessert1.jpg" class="card-img-top" alt="Dessert">
+
+<div class="card-body text-center">
+
+<h5>Chocolate Cake</h5>
+
+<p class="text-muted">
+Soft chocolate cake with cream.
+</p>
+
+<h4 class="text-danger">$10</h4>
+
+
+
+
+<button
+
+class="btn btn-outline-danger favorite">
+
+<i class="far fa-heart"></i>
+
+</button>
+
+
+
+
+
+
+<!-- <button class="btn btn-danger">
+Order Now
+</button> -->
+
+
+
+
+
+<button
+class="btn btn-danger w-100 mt-3 add-cart"
+
+data-name="Chocolate Cake"
+
+data-price="15">
+
+Add To Cart
+
+</button>
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ===================== -->
+<!-- MEET OUR CHEFS -->
+<!-- ===================== -->
+
+<section id="chefs" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h6 class="text-danger text-uppercase fw-bold">
+                Our Team
+            </h6>
+
+            <h2 class="display-5 fw-bold">
+                Meet Our Master Chefs
+            </h2>
+
+            <p class="text-muted">
+                Our experienced chefs prepare every meal with passion, creativity and fresh ingredients.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- CHEF 1 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="chef-card">
+
+                    <div class="chef-image">
+
+                        <img src="images/chef1.jpg" alt="Chef">
+
+                        <div class="chef-social">
+
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chef-content">
+
+                        <h4>Daniel Morgan</h4>
+
+                        <p>Executive Chef</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CHEF 2 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="chef-card">
+
+                    <div class="chef-image">
+
+                        <img src="images/chef2.jpg" alt="Chef">
+
+                        <div class="chef-social">
+
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chef-content">
+
+                        <h4>Sarah Johnson</h4>
+
+                        <p>Head Chef</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CHEF 3 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="chef-card">
+
+                    <div class="chef-image">
+
+                        <img src="images/chef3.jpg" alt="Chef">
+
+                        <div class="chef-social">
+
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chef-content">
+
+                        <h4>Michael Brown</h4>
+
+                        <p>Pastry Chef</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CHEF 4 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="chef-card">
+
+                    <div class="chef-image">
+
+                        <img src="images/chef4.jpg" alt="Chef">
+
+                        <div class="chef-social">
+
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chef-content">
+
+                        <h4>Emily Davis</h4>
+
+                        <p>Restaurant Manager</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ===========================
+     GALLERY
+============================ -->
+
+<section id="gallery" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h6 class="text-danger text-uppercase fw-bold">
+
+Gallery
+
+</h6>
+
+<h2 class="display-5 fw-bold">
+
+Our Food Gallery
+
+</h2>
+
+<p class="text-muted">
+
+Take a look at some of our delicious meals and beautiful restaurant atmosphere.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6">
+
+<a href="images/gallery1.jpg">
+
+<img src="images/gallery1.jpg" class="gallery-img img-fluid">
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="images/gallery2.jpg">
+
+<img src="images/gallery2.jpg" class="gallery-img img-fluid">
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="images/gallery3.jpg">
+
+<img src="images/gallery3.jpg" class="gallery-img img-fluid">
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="images/gallery4.jpg">
+
+<img src="images/gallery4.jpg" class="gallery-img img-fluid">
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="images/gallery5.jpg">
+
+<img src="images/gallery5.jpg" class="gallery-img img-fluid">
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="images/gallery6.jpg">
+
+<img src="images/gallery6.jpg" class="gallery-img img-fluid">
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="images/gallery7.jpg">
+
+<img src="images/gallery7.jpg" class="gallery-img img-fluid">
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="images/gallery8.jpg">
+
+<img src="images/gallery8.jpg" class="gallery-img img-fluid">
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =======================
+     TESTIMONIALS
+======================= -->
+
+<section id="testimonials" class="py-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h6 class="text-danger text-uppercase fw-bold">
+Testimonials
+</h6>
+
+<h2 class="display-5 fw-bold">
+What Our Customers Say
+</h2>
+
+<p class="text-muted">
+We are proud to serve delicious meals and create unforgettable dining experiences.
+</p>
+
+</div>
+
+<div id="testimonialCarousel"
+class="carousel slide"
+data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<!-- Testimonial 1 -->
+
+<div class="carousel-item active">
+
+<div class="testimonial-card">
+
+<img src="images/customer1.jpg" alt="Customer">
+
+<h4>John Smith</h4>
+
+<h6 class="text-danger">Food Blogger</h6>
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+<p>
+
+"The food was absolutely delicious and the customer service was excellent. I will definitely come back again."
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Testimonial 2 -->
+
+<div class="carousel-item">
+
+<div class="testimonial-card">
+
+<img src="images/customer2.jpg" alt="Customer">
+
+<h4>Sarah Johnson</h4>
+
+<h6 class="text-danger">Business Woman</h6>
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+<p>
+
+"I loved the atmosphere. Everything from the food to the staff was amazing."
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Testimonial 3 -->
+
+<div class="carousel-item">
+
+<div class="testimonial-card">
+
+<img src="images/customer3.jpg" alt="Customer">
+
+<h4>Michael Brown</h4>
+
+<h6 class="text-danger">Customer</h6>
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+
+<p>
+
+"One of the best restaurants I have ever visited. Highly recommended."
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<button
+class="carousel-control-prev"
+type="button"
+data-bs-target="#testimonialCarousel"
+data-bs-slide="prev">
+
+<span class="carousel-control-prev-icon"></span>
+
+</button>
+
+<button
+class="carousel-control-next"
+type="button"
+data-bs-target="#testimonialCarousel"
+data-bs-slide="next">
+
+<span class="carousel-control-next-icon"></span>
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+     BOOK A TABLE
+=========================== -->
+
+<section id="reservation" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<!-- Left Side -->
+
+<div class="col-lg-6 mb-5">
+
+<h6 class="text-danger text-uppercase fw-bold">
+
+Reservation
+
+</h6>
+
+<h2 class="display-4 fw-bold">
+
+Book Your Table Online
+
+</h2>
+
+<p class="text-muted">
+
+Reserve your favorite table in advance and enjoy an unforgettable dining experience with your family and friends.
+
+</p>
+
+<img src="images/reservation.jpg"
+class="img-fluid rounded shadow"
+alt="Reservation">
+
+</div>
+
+<!-- Right Side -->
+
+<div class="col-lg-6">
+
+<form id="reservationForm"
+class="shadow p-4 rounded bg-white">
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Full Name
+
+</label>
+
+<input
+type="text"
+class="form-control"
+id="fullname"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Email
+
+</label>
+
+<input
+type="email"
+class="form-control"
+id="email"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Phone Number
+
+</label>
+
+<input
+type="tel"
+class="form-control"
+id="phone"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Guests
+
+</label>
+
+<select
+class="form-select"
+id="guests">
+
+<option>1 Person</option>
+
+<option>2 People</option>
+
+<option>3 People</option>
+
+<option>4 People</option>
+
+<option>5+ People</option>
+
+</select>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Date
+
+</label>
+
+<input
+type="date"
+class="form-control"
+id="date"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Time
+
+</label>
+
+<input
+type="time"
+class="form-control"
+id="time"
+required>
+
+</div>
+
+<div class="col-12 mb-3">
+
+<label class="form-label">
+
+Special Request
+
+</label>
+
+<textarea
+class="form-control"
+rows="4"
+id="message">
+
+</textarea>
+
+</div>
+
+<div class="col-12">
+
+<button
+class="btn btn-danger w-100 btn-lg"
+type="submit">
+
+Reserve Table
+
+</button>
+
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ===========================
+     CONTACT US
+=========================== -->
+
+<section id="contact" class="py-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h6 class="text-danger text-uppercase fw-bold">
+Contact Us
+</h6>
+
+<h2 class="display-5 fw-bold">
+Get In Touch
+</h2>
+
+<p class="text-muted">
+We'd love to hear from you. Send us a message or visit our restaurant.
+</p>
+
+</div>
+
+<div class="row">
+
+<!-- Contact Information -->
+
+<div class="col-lg-5 mb-4">
+
+<div class="contact-box shadow p-4 rounded h-100">
+
+<h4 class="mb-4">
+Contact Information
+</h4>
+
+<div class="mb-4">
+
+<h5>
+<i class="fas fa-map-marker-alt text-danger me-2"></i>
+
+Address
+</h5>
+
+<p class="text-muted">
+123 GRA, Port Harcourt, Rivers State, Nigeria
+</p>
+
+</div>
+
+<div class="mb-4">
+
+<h5>
+<i class="fas fa-phone text-danger me-2"></i>
+
+Phone
+</h5>
+
+<p class="text-muted">
++234 811 701 2465
+</p>
+
+</div>
+
+<div class="mb-4">
+
+<h5>
+<i class="fas fa-envelope text-danger me-2"></i>
+
+Email
+</h5>
+
+<p class="text-muted">
+info@dkitchen.com
+</p>
+
+</div>
+
+<div class="mb-4">
+
+<h5>
+<i class="fas fa-clock text-danger me-2"></i>
+
+Opening Hours
+</h5>
+
+<p class="text-muted">
+
+Monday - Sunday
+
+<br>
+
+8:00 AM - 11:00 PM
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Contact Form -->
+
+<div class="col-lg-7">
+
+<form id="contactForm"
+class="shadow p-4 rounded bg-white">
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+
+<input
+type="text"
+class="form-control"
+id="name"
+placeholder="Your Name"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<input
+type="email"
+class="form-control"
+id="contactEmail"
+placeholder="Email Address"
+required>
+
+</div>
+
+<div class="col-12 mb-3">
+
+<input
+type="text"
+class="form-control"
+id="subject"
+placeholder="Subject"
+required>
+
+</div>
+
+<div class="col-12 mb-3">
+
+<textarea
+class="form-control"
+rows="6"
+id="contactMessage"
+placeholder="Write your message..."
+required></textarea>
+
+</div>
+
+<div class="col-12">
+
+<button
+type="submit"
+class="btn btn-danger btn-lg w-100">
+
+Send Message
+
+</button>
+
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- GOOGLE MAP -->
+
+<section>
+
+<iframe
+
+src="https://www.google.com/maps/embed?pb=!1m18..."
+
+width="100%"
+
+height="450"
+
+style="border:0;"
+
+allowfullscreen=""
+
+loading="lazy"
+
+referrerpolicy="no-referrer-when-downgrade">
+
+</iframe>
+
+</section>
+
+
+
+
+
+
+
+
+
+<div class="offcanvas offcanvas-end"
+tabindex="-1"
+id="cartCanvas">
+
+<div class="offcanvas-header">
+
+<h4>Your Cart</h4>
+
+<button
+class="btn-close"
+data-bs-dismiss="offcanvas">
+</button>
+
+</div>
+
+
+
+
+<input
+
+type="text"
+
+id="coupon"
+
+class="form-control mt-3"
+
+placeholder="Coupon Code">
+
+<button
+
+class="btn btn-warning w-100 mt-2"
+
+onclick="applyCoupon()">
+
+Apply Coupon
+
+</button>
+
+
+
+
+
+
+<div class="offcanvas-body">
+
+<div id="cart-items">
+
+<p>Your cart is empty.</p>
+
+</div>
+
+<hr>
+
+<h5>
+
+Total:
+
+$
+
+<span id="cart-total">
+
+0
+
+</span>
+
+</h5>
+
+<!-- <button
+class="btn btn-success w-100 mt-3">
+
+Checkout
+
+</button> -->
+
+
+
+
+
+<!-- <input
+
+type="text"
+
+id="coupon"
+
+class="form-control mt-3"
+
+placeholder="Coupon Code">
+
+<button
+
+class="btn btn-warning w-100 mt-2"
+
+onclick="applyCoupon()">
+
+Apply Coupon
+
+</button> -->
+
+
+
+
+
+
+
+
+
+<select
+id="paymentMethod"
+
+class="form-select mt-3">
+
+<option>
+
+Cash On Delivery
+
+</option>
+
+<option>
+
+Debit Card
+
+</option>
+
+<option>
+
+Bank Transfer
+
+</option>
+
+</select>
+
+
+
+
+
+
+
+
+
+
+<button
+class="btn btn-success w-100 mt-3"
+
+onclick="checkout()">
+
+Proceed To Checkout
+
+</button>
+
+
+
+
+<button
+class="btn btn-outline-danger w-100 mt-3"
+
+onclick="clearCart()">
+
+Clear Cart
+
+</button>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+
+
+
+
+
+
+
+
+<!-- <section
+data-aos="fade-up"> -->
+
+
+
+
+
+
+
+
+<!-- loading screen -->
+
+<!-- <div id="loader">
+
+<div class="spinner-border text-danger"
+
+role="status">
+
+</div>
+
+</div> -->
+
+
+
+
+
+
+
+
+<!-- Newsletter -->
+
+<section class="py-5 bg-danger text-white">
+
+<div class="container text-center">
+
+<h2>
+
+Subscribe To Our Newsletter
+
+</h2>
+
+<p>
+
+Receive our latest offers.
+
+</p>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-6">
+
+<div class="input-group">
+
+<input
+
+type="email"
+
+class="form-control"
+
+placeholder="Enter Email">
+
+<button
+
+class="btn btn-dark">
+
+Subscribe
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+<footer class="bg-dark text-white py-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<h3>D-Kitchen</h3>
+
+<p>
+
+Serving delicious meals with love.
+
+</p>
+
+</div>
+
+<div class="col-lg-4">
+
+<h4>Quick Links</h4>
+
+<ul class="list-unstyled">
+
+<li><a href="#home" class="text-white">Home</a></li>
+
+<li><a href="#about" class="text-white">About</a></li>
+
+<li><a href="#menu" class="text-white">Menu</a></li>
+
+<li><a href="#contact" class="text-white">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-4">
+
+<h4>Follow Us</h4>
+
+<a href="#" class="text-white me-3">
+
+<i class="fab fa-facebook"></i>
+
+</a>
+
+<a href="#" class="text-white me-3">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="#" class="text-white me-3">
+
+<i class="fab fa-twitter"></i>
+
+</a>
+
+<a href="#" class="text-white">
+
+<i class="fab fa-youtube"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="text-center mb-0">
+
+© 2026 D-Kitchen. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
